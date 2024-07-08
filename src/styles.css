@@ -1,0 +1,26 @@
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    gap: 5%;
+}
+
+.web-cam{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 1%;
+}
+.happy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+}
+.img{
+    width: 200px;
+}
