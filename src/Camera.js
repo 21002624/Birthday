@@ -21,7 +21,7 @@ function Camera() {
 
   return (
     <>
-    <h1 className='happy'>happy Birth Day</h1>
+    <h1 className='happy'>happy Birth Day Fake Friend ❤️</h1>
     <p className='happy'>You know what’s even better than this page? Seeing you smile, Sree! 😄</p>
     <div className='web-cam'>
       
