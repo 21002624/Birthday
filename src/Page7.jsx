@@ -10,7 +10,7 @@ function Page7() {
 
   return (
     <div className='container'>
-      <h1>Page 7</h1>      <p>You’re the last page, but I hope this isn’t the end of our story. 💖</p>
+       <p>You’re the last page, but I hope this isn’t the end of our story. 💖</p>
       <button onClick={navigateToNextPage}>Next</button>
     </div>
   );

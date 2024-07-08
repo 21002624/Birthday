@@ -13,7 +13,7 @@ function Page5() {
   return (
     <div className='container'>
 
-      <p>Cuites ScreenShort i took todat </p>
+      <p>Cuitest ScreenShort i took todat </p>
       <img className="img" src={sree} alt='imges'/>
       <button onClick={navigateToNextPage}>Next</button>
     </div>
