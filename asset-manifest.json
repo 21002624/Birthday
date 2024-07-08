@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Birthday/static/css/main.ffa2054e.css",
+    "main.js": "/Birthday/static/js/main.fea927b8.js",
+    "static/js/453.1db7f5ce.chunk.js": "/Birthday/static/js/453.1db7f5ce.chunk.js",
+    "static/media/sree1.jpg": "/Birthday/static/media/sree1.3693e9233b82d988db4e.jpg",
+    "static/media/sree.jpg": "/Birthday/static/media/sree.7e8b9756fd695a0146a5.jpg",
+    "index.html": "/Birthday/index.html",
+    "main.ffa2054e.css.map": "/Birthday/static/css/main.ffa2054e.css.map",
+    "main.fea927b8.js.map": "/Birthday/static/js/main.fea927b8.js.map",
+    "453.1db7f5ce.chunk.js.map": "/Birthday/static/js/453.1db7f5ce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ffa2054e.css",
+    "static/js/main.fea927b8.js"
+  ]
+}
