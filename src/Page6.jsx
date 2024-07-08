@@ -12,7 +12,7 @@ function Page6() {
   return (
     <div className='container'>
 
-      <img className='img' src={sree1} />
+      <img className='img' src={sree1} alt='iamges'/>
       <button onClick={navigateToNextPage}>Next</button>
     </div>
   );
