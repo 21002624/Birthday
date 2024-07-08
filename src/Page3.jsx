@@ -10,7 +10,7 @@ function Page3() {
 
   return (
     <div className='container'>
-      <h1></h1>
+
       <p>No surprise Happy Birthday 🎂 pirantha naal valthukkal doil</p>
       <button onClick={navigateToNextPage}>Next</button>
     </div>

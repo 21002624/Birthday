@@ -10,7 +10,7 @@ function Page4() {
 
   return (
     <div className='container'>
-      <h1></h1>
+
       <p>Thanks for your 230 Rs 🤣</p>
       <button onClick={navigateToNextPage}>Next</button>
     </div>

@@ -11,7 +11,7 @@ function Page6() {
 
   return (
     <div className='container'>
-      <h1></h1>
+
       <img className='img' src={sree1} />
       <button onClick={navigateToNextPage}>Next</button>
     </div>
