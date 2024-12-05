@@ -84,7 +84,7 @@ const CloudinaryUploadAndTwilio = () => {
           <button class="btn" onClick={capturePhoto} disabled={loading}>
             {loading ? 'Processing...' : 'Click !'}
           </button>
-          <button onClick={() => setUrl(null)} class="btn">
+          <button onClick={() => setUrl(url)} class="btn">
             Try new
           </button>
         </div>
