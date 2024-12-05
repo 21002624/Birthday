@@ -15,7 +15,12 @@ function Page1() {
       <div className='innerDiv'>
       <p>Bruh dont show thist o your bf</p>
       </div>
-      <button onClick={navigateToNextPage}>Next</button>
+      <button onClick={navigateToNextPage} className="learn-more">
+        <span className="circle" aria-hidden="true">
+        <span className="icon arrow"></span>
+        </span>
+        <span class="button-text">Learn More</span>
+      </button>
     </div>
   );
 }
