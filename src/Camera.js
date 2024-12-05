@@ -22,7 +22,7 @@ function Camera() {
 
   return (
     <>
-    <h1 className='happy'>happy Birth Day</h1>
+    <h1 className='happy'>happy Birthday</h1>
     <div className='cameraContainer'>
       <p className='happy'>You know what’s even better than this page? Seeing you smile, Sree! 😄</p>
       <div className='web-cam'>
@@ -34,11 +34,21 @@ function Camera() {
           videoConstraints={videoConstraints}
           onUserMedia={onUserMedia}
           screenshotQuality={1}
+          mirrored={true}
           className='camera'
         />
+
+        <div className='btnDiv'>
+          <button onClick={capturePhoto} class="btn">
+            Click!
+          </button>
+
+          <button onClick={() => setUrl(null)} class="btn">
+            Try new
+          </button>
+        </div>
+      
         
-        <button onClick={capturePhoto}>Capture</button>
-        <button onClick={() => setUrl(null)}>Refresh</button>
 
         {url && (
           <div>
