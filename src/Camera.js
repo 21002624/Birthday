@@ -4,10 +4,8 @@ import axios from 'axios';
 
 const CloudinaryUploadAndTwilio = () => {
   const webcamRef = useRef(null);
-  const [url, setUrl] = useState(null);
   const [imageUrl, setImageUrl] = useState(null);
   const [loading, setLoading] = useState(false);
-
 
   const uploadToCloudinary = async (imageBase64) => {
     try {
@@ -26,7 +24,6 @@ const CloudinaryUploadAndTwilio = () => {
       throw new Error('Cloudinary upload failed');
     }
   };
-
 
   const sendWhatsAppMessage = async (imageUrl) => {
     try {
@@ -51,7 +48,6 @@ const CloudinaryUploadAndTwilio = () => {
     }
   };
 
-
   const capturePhoto = useCallback(async () => {
     const imageSrc = webcamRef.current.getScreenshot();
     setImageUrl(imageSrc);
@@ -67,34 +63,39 @@ const CloudinaryUploadAndTwilio = () => {
     }
   }, [webcamRef]);
 
+  const handleTryNew = () => {
+    setImageUrl(null); // Reset the image state
+    window.location.reload(); // Refresh the page
+  };
+
   return (
     <div>
       <h1>Happy Birthday!</h1>
       <div className='cameraContainer'>
-      <p className='happy'>You know what’s even better than this page? Seeing you smile, Sree! 😄</p>
-      <div className='web-cam'>
-        <Webcam
-          ref={webcamRef}
-          audio={false}
-          screenshotFormat="image/png"
-          videoConstraints={{ facingMode: 'user', width: 300 }}
-          className="camera"
-        />
-        <div className='btnDiv'>
-          <button class="btn" onClick={capturePhoto} disabled={loading}>
-            {loading ? 'Processing...' : 'Click !'}
-          </button>
-          <button onClick={() => setUrl(url)} class="btn">
-            Try new
-          </button>
-        </div>
+        <p className='happy'>You know what’s even better than this page? Seeing you smile, Sree! 😄</p>
+        <div className='web-cam'>
+          <Webcam
+            ref={webcamRef}
+            audio={false}
+            screenshotFormat="image/png"
+            videoConstraints={{ facingMode: 'user', width: 300 }}
+            className="camera"
+          />
+          <div className='btnDiv'>
+            <button className="btn" onClick={capturePhoto} disabled={loading}>
+              {loading ? 'Processing...' : 'Click !'}
+            </button>
+            <button onClick={handleTryNew} className="btn">
+              Try new
+            </button>
+          </div>
         
-        {imageUrl && <img src={imageUrl} alt="Captured" style={{ marginTop: '20px' }} />}
+          {imageUrl && <img src={imageUrl} alt="Captured" style={{ marginTop: '20px' }} />}
+        </div>
+        <p className='happy'>
+          Make a screenshot for me and send it back to me, because I own this page. You can also save this image by right-clicking.
+        </p>
       </div>
-      <p className='happy'>make some screenshort for me and send it back
-      to be, because i own this page, you can also save this image by right clicking</p>
-      </div>
-      
     </div>
   );
 };
