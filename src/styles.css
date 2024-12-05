@@ -147,6 +147,7 @@ button {
     }
     .camera{
         width: 95%;
+        height: 20%;
     }
     .container{
         height: 300px;

@@ -4,7 +4,7 @@ import './styles.css';
 
 const videoConstraints = {
   width: 300,
-  facingMode: 'environment',
+  facingMode: 'user',
 };
 
 function Camera() {
@@ -29,11 +29,10 @@ function Camera() {
         
         <Webcam
           ref={webcamRef}
-          audio={true}
+          audio={false}
           screenshotFormat="image/png"
           videoConstraints={videoConstraints}
           onUserMedia={onUserMedia}
-          mirrored={true}
           screenshotQuality={1}
           className='camera'
         />
