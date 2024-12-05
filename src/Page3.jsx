@@ -12,7 +12,12 @@ function Page3() {
     <div className='container'>
 
       <p>No surprise Happy Birthday 🎂 pirantha naal valthukkal doil</p>
-      <button onClick={navigateToNextPage}>Next</button>
+      <button onClick={navigateToNextPage} className="learn-more">
+        <span className="circle" aria-hidden="true">
+        <span className="icon arrow"></span>
+        </span>
+        <span class="button-text">Next</span>
+      </button>
     </div>
   );
 }

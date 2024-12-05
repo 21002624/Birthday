@@ -35,6 +35,7 @@ function Camera() {
           onUserMedia={onUserMedia}
           mirrored={true}
           screenshotQuality={1}
+          className='camera'
         />
         
         <button onClick={capturePhoto}>Capture</button>

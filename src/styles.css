@@ -7,11 +7,6 @@
   font-weight: 500;
   font-style: normal;
 }
-h1{
-    font-family: "Bowlby One SC", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 .container{
     display: flex;
     align-items: center;
@@ -42,6 +37,7 @@ h1{
 .img{
     width: 200px;
 }
+
 
 
 
@@ -148,6 +144,12 @@ button {
     }
     .web-cam{
         flex-direction: column;
+    }
+    .camera{
+        width: 95%;
+    }
+    .container{
+        height: 300px;
     }
     
 }

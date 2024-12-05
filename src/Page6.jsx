@@ -13,7 +13,12 @@ function Page6() {
     <div className='container'>
 
       <img className='img' src={sree1} alt='iamges'/>
-      <button onClick={navigateToNextPage}>Next</button>
+      <button onClick={navigateToNextPage} className="learn-more">
+        <span className="circle" aria-hidden="true">
+        <span className="icon arrow"></span>
+        </span>
+        <span class="button-text">Next</span>
+      </button>
     </div>
   );
 }

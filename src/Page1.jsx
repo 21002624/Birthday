@@ -19,7 +19,7 @@ function Page1() {
         <span className="circle" aria-hidden="true">
         <span className="icon arrow"></span>
         </span>
-        <span class="button-text">Learn More</span>
+        <span class="button-text">Next</span>
       </button>
     </div>
   );

@@ -12,7 +12,12 @@ function Page2() {
     <div className='container'>
 
       <p>Hey Sreema, just wanted to say you’re looking extra cute today! 😘</p>
-      <button onClick={navigateToNextPage}>Next</button>
+      <button onClick={navigateToNextPage} className="learn-more">
+        <span className="circle" aria-hidden="true">
+        <span className="icon arrow"></span>
+        </span>
+        <span class="button-text">Next</span>
+      </button>
     </div>
   );
 }

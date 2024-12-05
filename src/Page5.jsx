@@ -15,7 +15,12 @@ function Page5() {
 
       <p>Cuitest ScreenShort i took todat </p>
       <img className="img" src={sree} alt='imges'/>
-      <button onClick={navigateToNextPage}>Next</button>
+      <button onClick={navigateToNextPage} className="learn-more">
+        <span className="circle" aria-hidden="true">
+        <span className="icon arrow"></span>
+        </span>
+        <span class="button-text">Next</span>
+      </button>
     </div>
   );
 }
