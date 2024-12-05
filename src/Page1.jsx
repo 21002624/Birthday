@@ -12,7 +12,9 @@ function Page1() {
   return (
     <div className='container'>
       <h1>Caution!!!</h1>
+      <div className='innerDiv'>
       <p>Bruh dont show thist o your bf</p>
+      </div>
       <button onClick={navigateToNextPage}>Next</button>
     </div>
   );

@@ -1,11 +1,30 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 
+*{
+    font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+}
+h1{
+    font-family: "Bowlby One SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20%;
     gap: 5%;
+}
+.innerDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .web-cam{
@@ -23,4 +42,22 @@
 }
 .img{
     width: 200px;
+}
+
+@media (max-width: 400px) {
+    .container{
+        flex-direction: column;
+        padding: 2rem;
+    }
+    button{
+        margin: 2rem;
+    }
+    .cameraContainer{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .web-cam{
+        flex-direction: column;
+    }
+    
 }
